@@ -3,7 +3,8 @@ import openai
 import re
 import os
 
-openai.api_key = "YOUR_API_KEY"
+# Pide la clave de API de OpenAI al usuario
+openai.api_key = st.text_input("Introduce tu clave de API de OpenAI:")
 
 def grade_essay(essay, weights):
     prompt = """
